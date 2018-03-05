@@ -20,22 +20,22 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eb7-9u-Zcn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.38466607320000001" green="0.82901729059999996" blue="0.5342230577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.1960799694" green="0.19607555870000001" blue="0.19607856870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHG-BK-F33" customClass="RoundedShadowView" customModule="Findit" customModuleProvider="target">
-                                <rect key="frame" x="20" y="50" width="335" height="60"/>
+                                <rect key="frame" x="20.5" y="50" width="334.5" height="60"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z3D-tD-7my">
-                                        <rect key="frame" x="8" y="8" width="319" height="44"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="z3D-tD-7my">
+                                        <rect key="frame" x="8" y="8" width="318.5" height="44"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The name of captured image will appear here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="gGW-Ha-sAd">
-                                                <rect key="frame" x="0.0" y="0.0" width="319" height="29.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The name of captured image will appear here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="gGW-Ha-sAd">
+                                                <rect key="frame" x="0.0" y="0.0" width="318.5" height="25"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                 <color key="textColor" red="0.48647621219999998" green="0.73249488689999998" blue="0.87529743019999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CONFIDENCE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svJ-Xh-Dbg">
-                                                <rect key="frame" x="0.0" y="29.5" width="319" height="14.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIDENCE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svJ-Xh-Dbg">
+                                                <rect key="frame" x="0.0" y="25" width="318.5" height="19"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -60,11 +60,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8l-2q-bFe" customClass="RoundedShadowButton" customModule="Findit" customModuleProvider="target">
-                                <rect key="frame" x="20" y="607" width="120" height="40"/>
+                                <rect key="frame" x="20.5" y="607" width="121.5" height="40"/>
                                 <color key="backgroundColor" red="0.48647621219999998" green="0.73249488689999998" blue="0.87529743019999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Buq-Og-sqK"/>
-                                    <constraint firstAttribute="width" constant="120" id="KoO-BN-gce"/>
                                 </constraints>
                                 <state key="normal" title="FLASH OFF">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,7 +72,7 @@
                                     <action selector="flashButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9G-B9-VDa"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Daq-R7-BHc">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Daq-R7-BHc">
                                 <rect key="frame" x="298" y="556" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
@@ -90,6 +89,7 @@
                             <constraint firstItem="Daq-R7-BHc" firstAttribute="centerY" secondItem="zid-KE-aBq" secondAttribute="centerY" id="XEl-ec-GJe"/>
                             <constraint firstItem="Eb7-9u-Zcn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XYp-dO-Eoa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zid-KE-aBq" secondAttribute="bottom" constant="20" id="asi-Cv-xUR"/>
+                            <constraint firstItem="zid-KE-aBq" firstAttribute="leading" secondItem="r8l-2q-bFe" secondAttribute="trailing" constant="120" id="sIw-Sn-Nm9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zid-KE-aBq" secondAttribute="trailing" constant="20" id="tZ1-24-a9H"/>
                             <constraint firstItem="Eb7-9u-Zcn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wRK-v9-2fv"/>
                         </constraints>

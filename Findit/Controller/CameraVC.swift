@@ -37,6 +37,7 @@ class CameraVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         speechSynthesizer.delegate = self
+        spinnerActivity.isHidden = true
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -98,7 +99,6 @@ class CameraVC: UIViewController {
         self.cameraView.isUserInteractionEnabled = false
         self.spinnerActivity.isHidden = false
         self.spinnerActivity.startAnimating()
-        
         
         let settings = AVCapturePhotoSettings()
         settings.previewPhotoFormat = settings.embeddedThumbnailPhotoFormat
