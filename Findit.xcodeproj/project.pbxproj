@@ -12,6 +12,10 @@
 		F4C453C0204C1F5E00371DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C453BF204C1F5E00371DB9 /* Assets.xcassets */; };
 		F4C453C3204C1F5E00371DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C453C1204C1F5E00371DB9 /* LaunchScreen.storyboard */; };
 		F4C453CE204C202B00371DB9 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C453CD204C202B00371DB9 /* CameraVC.swift */; };
+		F4C453D0204C394E00371DB9 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C453CF204C394E00371DB9 /* RoundedShadowView.swift */; };
+		F4C453D2204C3C4C00371DB9 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C453D1204C3C4C00371DB9 /* RoundedShadowButton.swift */; };
+		F4C453D4204C3DE500371DB9 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C453D3204C3DE500371DB9 /* RoundedImageView.swift */; };
+		F4C453D6204CC7F500371DB9 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F4C453D5204CC7F500371DB9 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F4C453C2204C1F5E00371DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4C453C4204C1F5E00371DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C453CD204C202B00371DB9 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		F4C453CF204C394E00371DB9 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		F4C453D1204C3C4C00371DB9 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		F4C453D3204C3DE500371DB9 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		F4C453D5204CC7F500371DB9 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,9 @@
 		F4C453CB204C1F8100371DB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4C453CF204C394E00371DB9 /* RoundedShadowView.swift */,
+				F4C453D1204C3C4C00371DB9 /* RoundedShadowButton.swift */,
+				F4C453D3204C3DE500371DB9 /* RoundedImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -84,6 +95,7 @@
 		F4C453CC204C1F8F00371DB9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F4C453D5204CC7F500371DB9 /* SqueezeNet.mlmodel */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -161,7 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C453CE204C202B00371DB9 /* CameraVC.swift in Sources */,
+				F4C453D6204CC7F500371DB9 /* SqueezeNet.mlmodel in Sources */,
+				F4C453D4204C3DE500371DB9 /* RoundedImageView.swift in Sources */,
 				F4C453B9204C1F5D00371DB9 /* AppDelegate.swift in Sources */,
+				F4C453D0204C394E00371DB9 /* RoundedShadowView.swift in Sources */,
+				F4C453D2204C3C4C00371DB9 /* RoundedShadowButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
